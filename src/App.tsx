@@ -2,7 +2,7 @@ import { Route, BrowserRouter, Routes } from "react-router-dom";
 import "./App.css";
 import { store } from "./redux/store";
 import { Provider } from "react-redux";
-import { HomePage } from "./pages";
+import { BotSettings, HomePage } from "./pages";
 
 function App() {
   return (
@@ -10,6 +10,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<HomePage />} />
+          <Route path="/botsetting" element={<BotSettings />} />
         </Routes>
       </BrowserRouter>
     </Provider>

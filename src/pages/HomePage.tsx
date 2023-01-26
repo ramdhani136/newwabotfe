@@ -1,9 +1,13 @@
-import React from 'react'
+import React from "react";
+import { Meta } from "../utils";
 
-const HomePage:React.FC = () => {
-  return (
-    <div className='font-bold'>HomePage</div>
-  )
-}
+const HomePage: React.FC = () => {
+  const metaData = {
+    title: "Wabot - PT. Ekatunggal Tunas Mandiri",
+    description: "Halaman home wabot ekatunggal",
+  };
 
-export default HomePage
+  return <>{Meta(metaData)}</>;
+};
+
+export default HomePage;
